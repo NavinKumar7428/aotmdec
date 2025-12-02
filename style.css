@@ -1,0 +1,83 @@
+:root{
+  --accent: #79280a;
+  --muted: #6c757d;
+  --light: #f8f9fa;
+}
+
+/* Basic layout */
+body {
+  scroll-behavior: smooth;
+  background: var(--light);
+  font-family: "Inter", system-ui, -apple-system, "Poppins", sans-serif;
+  color: #222;
+}
+
+/* Hero */
+.hero-section 
+{
+  background: linear-gradient(180deg, rgba(121,40,10,0.06), rgba(121,40,10,0.03));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.hero-img{ 
+  max-height: 320px; 
+  object-fit: cover; 
+  border-radius: 12px; 
+}
+
+/* Light card sections */
+.section-card
+{ 
+  background: transparent; 
+}
+
+/* Buttons */
+.btn-glow{
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::after{
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.12), transparent 20%);
+  transform: rotate(25deg);
+  transition: .6s;
+}
+
+.btn-glow:hover::after{ top: -10%; 
+  left: -10%;
+ }
+
+/* cards */
+.card { border-radius: 12px; }
+
+/* small info card */
+.infocard{ background: linear-gradient(180deg,#fff,#fafafa); }
+
+/* navbar link active styling (scrollspy) */
+.navbar .nav-link.active{ color: var(--accent) !important; 
+  border-bottom: 2px solid rgba(121,40,10,0.12);
+ }
+
+/* Responsive typography */
+@media(max-width: 576px){
+  .display-5 { font-size: 1.6rem; }
+  .hero-img{ display:none; } /* hide large image on tiny screens */
+}
+
+/* subtle reveal animation */
+.reveal{
+  opacity:0;
+  transform: translateY(12px);
+  animation: reveal 0.8s ease forwards;
+  animation-delay: 0.25s;
+}
+@keyframes reveal{
+  to{ opacity:1; transform:none; }
+}
