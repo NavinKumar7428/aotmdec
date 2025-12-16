@@ -25,7 +25,7 @@ body {
 /* Light card sections */
 .section-card
 { 
-  background: transparent; 
+  //background: transparent; 
 }
 
 /* Buttons */
@@ -125,6 +125,7 @@ body {
 @keyframes reveal{
   to{ opacity:1; transform:none; }
 }
+
 
 
 
