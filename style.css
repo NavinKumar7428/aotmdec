@@ -13,15 +13,11 @@ body {
 }
 
 /* Hero */
-.hero-section 
-{
-  background: linear-gradient(180deg, rgba(121,40,10,0.06), rgba(121,40,10,0.03));
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
+
 
 .hero-img{ 
-  max-height: 320px; 
+  max-height: 400px; 
+  width: 600px;
   object-fit: cover; 
   border-radius: 12px; 
 }
@@ -61,9 +57,57 @@ body {
 .infocard{ background: linear-gradient(180deg,#fff,#fafafa); }
 
 /* navbar link active styling (scrollspy) */
-.navbar .nav-link.active{ color: var(--accent) !important; 
-  border-bottom: 2px solid rgba(121,40,10,0.12);
- }
+/* ===============================
+   Navbar Hover + Shrink Animation
+=================================*/
+
+.navbar{
+  transition: all 0.3s ease;
+  padding: 18px 0;
+}
+
+.navbar.shrink{
+  padding: 6px 0;
+  background-color: #ffffffee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.navbar-nav .nav-link{
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover{
+  color: #0d6efd;
+}
+
+.navbar-nav .nav-link:hover::after{
+  width: 100%;
+}
+
+.navbar-nav .btn{
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .btn:hover{
+  background-color: #0d6efd;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(13,110,253,0.5);
+}
+
 
 /* Responsive typography */
 @media(max-width: 576px){
@@ -81,3 +125,6 @@ body {
 @keyframes reveal{
   to{ opacity:1; transform:none; }
 }
+
+
+
