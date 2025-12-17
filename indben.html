@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>India & Benefits</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    .navbar-nav .nav-link{
+      position: relative;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      transition: width 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover{
+      color: #0d6efd;
+    }
+
+    .navbar-nav .nav-link:hover::after{
+      width: 100%;
+    }
+
+    .navbar-nav .btn{
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .btn:hover{
+      background-color: #0d6efd;
+      color: #fff;
+      box-shadow: 0 0 15px rgba(13,110,253,0.5);
+    }
+
+    .navbar{
+      animation: slideDown 0.6s ease;
+    }
+
+    @keyframes slideDown{
+      from{ transform: translateY(-20px); opacity: 0; }
+      to{ transform: translateY(0); opacity: 1; }
+    }
+
+    
+    .navbar{
+      transition: all 0.3s ease;
+      padding: 18px 0;
+    }
+
+    .navbar.shrink{
+      padding: 6px 0;
+      background-color: #ffffffee;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .navbar.shrink .navbar-brand{
+      font-size: 1.1rem;
+    }
+
+    .navbar.shrink .nav-link{
+      font-size: 0.95rem;
+    }
+  </style>
+
+<body>
+
+
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <i class="fa-solid fa-satellite fa-lg" style="color :#0d6efd;"></i>
+      SatNet India
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navCollapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="how.html">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
+        <li class="nav-item"><a class="nav-link" href="companie.html">Companies</a></li>
+        <li class="nav-item"><a class="nav-link" href="future.html">Future</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-sm btn-outline-primary ms-3" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="hero-section py-5">
+  <div class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h2 class="fw-bold">Why Satellite Internet Important for India</h2>
+        <p class="lead text-muted mt-3">India’s diverse geography and growing digital needs make satellite internet a key technology for inclusive growth, resilience, and future-ready connectivity.</p>
+        <a href="indben.html#ben" class="btn btn-primary btn-lg me-2">Benefits</a>
+        
+      </div>
+      <div class="col-lg-6 text-center ">
+        <img src="images/ind.png" class="img-fluid rounded shadow" alt="India connectivity">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="mb-5">
+
+
+<section class="container section-card py-5">
+  <div class="text-center mb-5">
+    <h2>Why India Needs Satellite Internet</h2>
+    <p class="text-muted">Beyond cities, satellite networks bridge gaps where traditional infrastructure struggles.</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3 ">
+      <div class="card h-100 shadow-sm">
+        <img src="images/ind2.png" class="card-img-top d-none d-md-block" alt="Remote areas">
+        <div class="card-body">
+          <i class="bi bi-geo-alt-fill fs-3 text-primary"></i>
+          <h5 class="mt-2">Remote & Rural Access</h5>
+          <p class="small text-muted">Mountainous regions, islands, and tribal belts can access reliable broadband without waiting for fiber rollout.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="images/ind3.png" class="card-img-top d-none d-md-block" alt="Disaster response">
+        <div class="card-body">
+          <i class="bi bi-exclamation-triangle-fill fs-3 text-warning"></i>
+          <h5 class="mt-2">Disaster Resilience</h5>
+          <p class="small text-muted">Satellite links restore communication quickly during floods, earthquakes, or cyclones.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="images/ind4.png" class="card-img-top d-none d-md-block" alt="Education">
+        <div class="card-body">
+          <i class="bi bi-mortarboard-fill fs-3 text-success"></i>
+          <h5 class="mt-2">Education & Healthcare</h5>
+          <p class="small text-muted">Enables online classes, digital classrooms, telemedicine, and remote diagnostics.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="images/ind5.png" class="card-img-top d-none d-md-block" alt="Business">
+        <div class="card-body">
+          <i class="bi bi-shop fs-3 text-danger"></i>
+          <h5 class="mt-2">Economic Inclusion</h5>
+          <p class="small text-muted">Small businesses, agriculture services, and local markets gain digital access.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="ben" class="container section-card py-5">
+  <div class="text-center mb-5">
+    <h2>Key Benefits</h2>
+    <p class="text-muted">Advantages that make satellite internet a powerful complement to fiber and mobile networks.</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="images/ben1.png" class="card-img-top d-none d-md-block">
+        <div class="card-body">
+          <i class="bi bi-speedometer2 fs-2 text-primary"></i>
+          <h5 class="mt-2">Rapid Deployment</h5>
+          <p class="small text-muted">No digging or cabling required — terminals can be installed within hours or days.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="images/ben2.png" class="card-img-top d-none d-md-block">
+        <div class="card-body">
+          <i class="bi bi-globe fs-2 text-success"></i>
+          <h5 class="mt-2">Wide Coverage</h5>
+          <p class="small text-muted">Provides connectivity across land, sea, and air — including hard-to-reach locations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="images/ben3.png" class="card-img-top d-none d-md-block">
+        <div class="card-body">
+          <i class="bi bi-shield-check fs-2 text-warning"></i>
+          <h5 class="mt-2">Network Redundancy</h5>
+          <p class="small text-muted">Acts as a backup for fiber and mobile networks in critical applications.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="images/ben4.png" class="card-img-top d-none d-md-block">
+        <div class="card-body">
+          <i class="bi bi-cpu fs-2 text-danger"></i>
+          <h5 class="mt-2">Future Ready</h5>
+          <p class="small text-muted">Supports IoT, smart cities, defense, aviation, and next-gen digital services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container section-card py-5 text-center">
+  <h2>India Coverage & Network Vision</h2>
+  <p class="text-muted">Image of how satellite networks complement terrestrial infrastructure.</p>
+  <img src="images/ind6.png" class="img-fluid rounded shadow mt-3" alt="Map">
+</section>
+
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
